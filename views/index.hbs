@@ -1,14 +1,18 @@
-<section id="heroes">
+<section id="thumbSection" class="row">
       <!--loop w handlebars-->
-    {{#each avatars}}
-    <div class="hero-container">
-        <a href="/{{name}}">
-        <img src="/images/{{avatar}}" alt="avatar">
+    {{#each thing_thumb}}
+    <div class="small-6 large-4 columns thumb">>
+        <a href="/{{thing_title}}">
+        <img src="/images/{{thing_thumb}}" alt="avatar" class="thumbPic">
         
         </a>
-    <h3 class="hero-name">{{name}}</h3>
 </div>
     
     {{/each}} <!--close loop-->
      
 </section>>
+
+
+
+
+

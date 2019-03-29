@@ -3,24 +3,24 @@
   <head>
     <title>{{title}}</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel='stylesheet' href='/stylesheets/main.css' />
+  <link rel="stylesheet" href="css/foundation.css">
+          <script src="https://unpkg.com/vue"></script>
+  <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
   </head>
-  <body>
-    <header>
-      <nav>
-        <h1>Marvel Who's Who - A Primer</h1>
-        <a href="/">
-          <i class="fas fa-home"></i>
-        </a>
-      </nav>
+   <!--    <nav> -->
+<body id="app">
+ <div class="small-12 large-9 large-push-3 large-centered columns">
+        <h2 id="title">Favorite Things</h2>
+        </div>
+      <!--   <a href="/"> -->
+      <!--     <i class="fas fa-home"></i> -->
+      <!--   </a> -->
+    <!--   </nav> -->
     </header>    
     <main>
       {{{body}}} <!--this is like router-view in vue.js-->
     </main>
-    <img class="marvel-logo" src="/images/marvelstudios.jpg" alt="logo">
-    <footer>
-      <p>All characters and bio information &copy; Marvel Studios. Used totally without permission... don't tell anyone!</p>
-    </footer>
   </body>
 </html>

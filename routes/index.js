@@ -6,24 +6,24 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   //get data from db and send it through the route to the views/index.hbs page and render that (including DB data)
   //res.render('index', { title: 'Express' });
-  connect.query(`SELECT name, avatars FROM hero`,(err, result) => {
+  connect.query(`SELECT thing_title, thing_thumb FROM tbl_favThings`,(err, result) => {
 
    if (err){
      throw err;
      console.log(err);
    }else{
      console.log(result);
-     res.render('index', { avatars: result });
+     res.render('index', { thing_thumb: result });
    }
   });
 });
 
 //get one hero's bio information
 
-router.get('/:hero', function(req, res, next) {
+router.get('/:tbl_favThings', function(req, res, next) {
   //get data from db and send it through the route to the views/index.hbs page and render that (including DB data)
   //res.render('index', { title: 'Express' });
-  connect.query(`SELECT * FROM hero WHERE name="${req.params.hero}"`,(err, result) => {
+  connect.query(`SELECT * FROM tbl_favThings WHERE thing_title="${req.params.tbl_favThings}"`,(err, result) => {
 
    if (err){
      throw err;

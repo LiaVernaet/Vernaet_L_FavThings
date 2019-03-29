@@ -1,2 +1,68 @@
-*{border:0;margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box}html{position:relative;min-height:100%}body{background:url(/images/dark-honeycomb.png) repeat #ED1D24;color:#fff;font-size:14px;font-family:Arial, Helvetica, sans-serif;margin-bottom:50px}h1,h2,h3,h4,h5,h6{font-family:'Permanent Marker', cursive}header{background-color:#ED1D24}nav a{float:right}nav h1{font-size:2rem;padding:8px 20px;display:inline-block}nav a{font-size:1.75rem;padding:10px 20px 0 0}nav a:hover{color:#65b86c}main{padding:12px 20px}footer{background-color:#ED1D24;position:absolute;bottom:0;width:100%;height:50px;text-align:center;padding-top:1rem}#heroes{text-align:center;margin-top:20px}.hero-container{border-radius:1rem;overflow:hidden;display:inline-block;text-align:center;margin:0 12px 20px;border:2px solid white;background:#ED1D24}.hero-container img{width:100%}.hero-container h3{font-size:1.5rem;padding:8px}.hero-container:last-of-type{margin-bottom:120px}.marvel-logo{width:200px;position:absolute;bottom:40px;z-index:-1;left:0;right:0;display:block;margin:0 auto}@media screen and (min-width: 1032px){.hero-container:last-of-type{margin-bottom:20px}}a{text-decoration:none;color:white;text-transform:uppercase}
+.thumbPic:hover {
+  animation-name: thumbnailAnimation;
+  animation-duration: 1s; }
+
+@keyframes thumbnailAnimation {
+  from {
+    border: 0px solid blue;
+    border-radius: 10px; }
+  to {
+    border: 5px solid blue;
+    border-radius: 10px; } }
+#title {
+  margin-top: 40px;
+  color: #15008b;
+  margin-bottom: 40px;
+  font-family: 'Raleway', sans-serif; }
+
+#thingDiv {
+  margin-top: 20px;
+  background-color: #c2c2fd;
+  width: 800px;
+  margin-left: 300px;
+  padding: 20px;
+  border-radius: 10px; }
+
+#thingTitle {
+  margin-left: 20px;
+  font-family: 'Raleway', sans-serif;
+  color: #5555d6; }
+
+p {
+  margin-left: 10px;
+  text-align: center; }
+
+#thingImg {
+  margin-bottom: 30px;
+  margin-left: 24px; }
+
+#app {
+  background-color: #8787e2; }
+
+section {
+  background-color: #c2c2fd;
+  padding: 20px;
+  border-radius: 20px; }
+
+#backButton {
+  padding: 20px;
+  color: #15008b;
+  font-family: 'Raleway', sans-serif;
+  background-color: #c2c2fd;
+  font-size: 29px;
+  width: 110px;
+  margin-left: 940px;
+  border-radius: 20px;
+  margin-top: 20px; }
+
+#backButton:hover {
+  animation-name: thumbnailAnimation;
+  animation-duration: 1s; }
+
+@keyframes thumbnailAnimation {
+  from {
+    background-color: #c2c2fd; }
+  to {
+    background-color: #6161ff; } }
+
 /*# sourceMappingURL=main.css.map */
